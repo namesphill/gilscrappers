@@ -12,7 +12,9 @@
     "cheerio": "^1.0.0-rc.3",
     "npm-text-parser": "^1.0.8",
     "request": "^2.88.0",
-    "sirv-cli": "^0.4.4"
+    "sirv-cli": "^0.4.4",
+    "@types/cheerio": "^0.22.13",
+    "@types/request": "^2.48.3"
   },
   "devDependencies": {
     "typescript": "^3.4.3",

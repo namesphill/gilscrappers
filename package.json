@@ -5,8 +5,8 @@
     "lerna": "^3.15.0"
   },
   "scripts": {
-    "start": "lerna exec run start",
-    "build": "lerna exec run build",
+    "start": "lerna exec yarn run start",
+    "build": "lerna exec yarn run build",
     "bootstrap": "lerna bootstrap"
   },
   "workspaces": [
