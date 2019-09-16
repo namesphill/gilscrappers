@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "npmClient": "yarn",
+  "npmClientArgs": ["--ignore-engines"],
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "message": "chore(release): publish"
+    }
+  },
+  "packages": ["packages/*"]
+}

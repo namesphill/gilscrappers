@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "lib": ["esnext", "es6", "dom"],
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "types": ["node"]
+  },
+  "compileOnSave": true,
+  "include": ["src"],
+  "skipLibCheck": true
+}

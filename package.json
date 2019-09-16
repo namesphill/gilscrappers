@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.15.0"
+  },
+  "scripts": {
+    "start": "lerna exec run start",
+    "build": "lerna exec run build",
+    "bootstrap": "lerna bootstrap"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
