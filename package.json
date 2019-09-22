@@ -7,6 +7,7 @@
   "scripts": {
     "start": "lerna exec yarn run start",
     "build": "lerna exec yarn run build",
+    "test": "lerna exec yarn run test",
     "bootstrap": "lerna bootstrap"
   },
   "workspaces": [
