@@ -11,9 +11,10 @@
     "lib": ["esnext", "es6", "dom"],
     "esModuleInterop": true,
     "baseUrl": ".",
-    "types": ["node"]
+    "types": ["node", "jest"]
   },
   "compileOnSave": true,
-  "include": ["src"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.test.ts"],
   "skipLibCheck": true
 }
