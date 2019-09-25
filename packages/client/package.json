@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": "https://namesphill.github.io/gilscrappers",
   "private": true,
   "dependencies": {
     "@types/jest": "24.0.18",
@@ -13,12 +14,17 @@
     "typescript": "3.6.3",
     "scrappy": "1.0.0"
   },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "serve": "cd build && python3 -m http.server",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
