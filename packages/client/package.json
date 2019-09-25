@@ -10,11 +10,13 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.2",
-    "typescript": "3.6.3"
+    "typescript": "3.6.3",
+    "scrappy": "1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "serve": "cd build && python3 -m http.server",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -5,11 +5,15 @@ it("should throw error with invalid urls", async () => {
 });
 
 it("should work with valid urls", async () => {
-  await expect(getUrlData("https://example.com")).resolves.toBeTruthy();
+  await expect(
+    getUrlData("https://example.com").then(XXX => {
+      console.warn({ XXX });
+      return XXX;
+    })
+  ).resolves.toBeTruthy();
 });
 
 it("should throw with empty sites", async () => {
-  await expect(
-    getUrlData("https://this-page-does-not-exist-at-all.gov")
-  ).rejects.toThrow();
+  const fakeUrl = "https://this-page-does-not-exist-at-all.gov";
+  await expect(getUrlData(fakeUrl)).rejects.toThrow();
 });

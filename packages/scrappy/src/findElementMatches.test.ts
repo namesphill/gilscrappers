@@ -7,6 +7,6 @@ it("finds matches when matches exist", async () => {
     const matches = findElementMatches(data, "domain", "p, h1");
     expect(matches.length).toEqual(2);
   } catch (error) {
-    expect(error).toBeUndefined();
+    fail();
   }
 });

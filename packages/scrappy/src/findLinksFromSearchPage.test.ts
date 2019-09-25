@@ -4,8 +4,14 @@ import getUrlData from "./getUrlData";
 
 it("finds matches for a search", async () => {
   const searchUrl = generateSearchUrlFromKeywords(["uber", "IPO"]);
-  const data = await getUrlData(searchUrl);
-  const links = findLinksFromSearchPage(data);
-  expect(links).toBeTruthy();
-  expect(links.length).toBeTruthy();
+  try {
+    const data = await getUrlData(searchUrl);
+    console.warn({ DATA: data });
+    const links = findLinksFromSearchPage(data);
+    console.warn({ links });
+    expect(links).toBeTruthy();
+    expect(links.length).toBeTruthy();
+  } catch (error) {
+    fail();
+  }
 });

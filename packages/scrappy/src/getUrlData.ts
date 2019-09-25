@@ -2,7 +2,14 @@ import cheerio from "cheerio";
 import axios from "axios";
 export default async function getUrlData(url: string): Promise<CheerioStatic> {
   try {
-    const response = await axios.get(url);
+    new URL(url);
+  } catch (error) {
+    throw new Error("Invalid URL passed");
+  }
+  try {
+    const response = await axios.get(
+      "https://us-central1-utlils.cloudfunctions.net/search_proxy?url=" + url
+    );
     if (response.data) {
       let $;
       try {
