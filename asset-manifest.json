@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gilscrappers/static/css/main.dbf6cf6c.chunk.css",
+    "main.js": "/gilscrappers/static/js/main.cfdf115d.chunk.js",
+    "main.js.map": "/gilscrappers/static/js/main.cfdf115d.chunk.js.map",
+    "runtime-main.js": "/gilscrappers/static/js/runtime-main.5725a0f6.js",
+    "runtime-main.js.map": "/gilscrappers/static/js/runtime-main.5725a0f6.js.map",
+    "static/js/2.9d2e3738.chunk.js": "/gilscrappers/static/js/2.9d2e3738.chunk.js",
+    "static/js/2.9d2e3738.chunk.js.map": "/gilscrappers/static/js/2.9d2e3738.chunk.js.map",
+    "index.html": "/gilscrappers/index.html",
+    "precache-manifest.76896b905fc31af16c087e6705aa11f0.js": "/gilscrappers/precache-manifest.76896b905fc31af16c087e6705aa11f0.js",
+    "service-worker.js": "/gilscrappers/service-worker.js",
+    "static/css/main.dbf6cf6c.chunk.css.map": "/gilscrappers/static/css/main.dbf6cf6c.chunk.css.map"
+  }
+}
