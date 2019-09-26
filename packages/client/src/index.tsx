@@ -89,7 +89,10 @@ const App: React.FC = () => {
       searchResults.forEach((link, index) => {
         getUrlData(link)
           .then(data => {
-            const matches = findElementMatches(data, contentKeywords);
+            const matches = findElementMatches(
+              data,
+              contentKeywords.split(" ")
+            );
             const textMatches: string[] = matches
               .map(match =>
                 match.text && !match.text.includes("src=")

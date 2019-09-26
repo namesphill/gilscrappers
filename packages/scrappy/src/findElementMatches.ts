@@ -5,9 +5,9 @@ export default function findElementMatches(
 ): { text: string; link: string }[] {
   const matches: { text: string; link: string }[] = [];
   const regexp: RegExp = new RegExp(
-    (match as any)["map"]
+    `\s?` + (match as any)["map"]
       ? (match as string[]).join("|")
-      : (match as string | RegExp)
+      : (match as string | RegExp) + `\s`
   );
   $(selector).each((index, elem) => {
     const text = String($(elem).text() || "")
